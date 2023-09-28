@@ -34,7 +34,7 @@ namespace SOTI.Capstone.Flamingo.Controllers
             {
 
                 var result = _cardInfo.ValidateCardDetails(card);
-                if (result == null)
+                if (result == false)
                 {
                     return BadRequest();
 
